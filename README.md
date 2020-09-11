@@ -12,7 +12,7 @@ More info https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-
 
 #### Giống nhau:
 1. Giải quyết vấn đề performance khi sử dụng trực tiếp actual DOM.
-2. Không xuất hiện trên actual DOMR.
+2. Không xuất hiện trên actual DOM.
 
 #### Khác nhau
 
