@@ -43,6 +43,14 @@ Cấu trúc HOC:
 #### Ứng dụng:
 
 5.	Điểm mạnh và điểm yếu của React.
+Điểm mạnh | Điểm yếu
+------------ | -------------
+Virtual DOM (Nhanh + performance cao). | Poor documentation.
+Reusable components.| Confusing JSX.
+Downward data flow (prevents errors and facilitates debugging). | Complicated search engine optimization.
+Huge community. | Narrow focus on UI.
+React Developer Tools | 
+
 6.	React context là gì? Ứng dụng trong React?
 7.	Server side rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
 8.	Stateless/Stateful Component là gì? Function Component là Stateless Component hay Stateful Component? Tại sao?
