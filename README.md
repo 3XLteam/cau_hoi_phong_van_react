@@ -1,5 +1,9 @@
 # Tổng hợp câu hỏi phỏng vấn react
-1.	Virtual DOM làm việc như thế nào trong React?
+#### 1.	Virtual DOM làm việc như thế nào trong React?  
+Giống như DOM thật, DOM ảo là node tree chứa tất cả element và content dưới dạng object và property.  
+Render() method sẽ tạo ra DOM ảo từ các react component.
+React sẽ tạo 1 DOM ảo mới mỗi khi có thay đổi data.
+  
 2.	Nêu rõ sự khác biệt giữa Virtual DOM và Shadow DOM.
 3.	Nêu rõ vòng Lifecycle trong React, cho cả Class Component và Function Component.
 4.	Higher-order component (HOC) là gì và ứng dụng trong React?
