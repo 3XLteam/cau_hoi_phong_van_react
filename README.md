@@ -30,7 +30,7 @@ More info
 ### 3.	Nêu rõ vòng Lifecycle trong React, cho cả Class Component và Function Component.
 ### 4.	Higher-order component (HOC) là gì và ứng dụng trong React?
 
-## Khái niệm
+#### Khái niệm
 
 Giống với higher order function, HOC là một pattern để tái sử dụng logic trong React component. Là một component (HOC A) nhận param là một (B) hoặc nhiều component (C) rồi trả về một component mới (B v2, C v2). Trong đó B v2 và C v2 có chung một logic được nhận từ HOC A.
 
@@ -40,7 +40,7 @@ Cấu trúc HOC:
 * Trả về một component.
 * Component được trả về có thể render giống y chang param component.
 
-## Ứng dụng:
+#### Ứng dụng:
 
 5.	Điểm mạnh và điểm yếu của React.
 6.	React context là gì? Ứng dụng trong React?
