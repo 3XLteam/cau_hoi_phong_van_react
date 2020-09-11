@@ -3,7 +3,7 @@
 Giống như actual DOM thật, virtual DOM ảo là node tree chứa tất cả element và content dưới dạng object và property, được lưu vào memory. Method render() sẽ tạo ra virtual DOM từ các react component.  React sẽ tạo mới virtual DOM mỗi khi có thay đổi data.  
 #### Tóm tắt
 1. Khi có sự thay đổi, toàn bộ UI sẽ được re-render vào virtual DOM.
-2. React sẽ đo đạc sự khác nhau giữa actual DOM và virtual DOM.
+2. React sẽ đo đạc sự khác nhau giữa actual DOM và virtual DOM (diffing).
 3. Autual DOM sẽ được update dựa trên virtual DOM, chỉ update các phần bị thay đổi (patch)  
   
 More info https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-in-react-js
