@@ -8,7 +8,25 @@ Giống như actual DOM thật, virtual DOM ảo là node tree chứa tất cả
   
 More info https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-in-react-js
   
-2.	Nêu rõ sự khác biệt giữa Virtual DOM và Shadow DOM.
+### 2.	Nêu rõ sự khác biệt giữa Virtual DOM và Shadow DOM.
+
+#### Giống nhau:
+1. Giải quyết vấn đề performance khi sử dụng trực tiếp actual DOM.
+2. Không xuất hiện trên actual DOMR.
+
+#### Khác nhau
+
+Virual DOM | Shadow DOM
+------------ | -------------
+Là bản copy của toàn bộ actual DOM. | Là một phần nhỏ của actual DOM.
+Là một chiến thuật (strategy) để tăng performance.| Là một công cụ (tool) để tăng performance.
+Tách biệt với actual DOM. | Kết nối với actual DOM bằng shadow root.
+Dùng để update nhanh và so sánh với actual DOM. | Dùng để tạo một môi trường độc lập, tách biệt với actual DOM (HTML, CSS).
+
+More info
+* https://www.blog.duomly.com/what-is-the-difference-between-shadow-dom-and-virtual-dom/
+* https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM
+
 3.	Nêu rõ vòng Lifecycle trong React, cho cả Class Component và Function Component.
 4.	Higher-order component (HOC) là gì và ứng dụng trong React?
 5.	Điểm mạnh và điểm yếu của React.
