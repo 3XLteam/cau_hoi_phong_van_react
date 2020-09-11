@@ -43,6 +43,7 @@ Cấu trúc HOC:
 #### Ứng dụng:
 
 5.	Điểm mạnh và điểm yếu của React.
+
 Điểm mạnh | Điểm yếu
 ------------ | -------------
 Virtual DOM (Nhanh + performance cao). | Poor documentation.
