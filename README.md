@@ -131,6 +131,7 @@ Huge community. | Narrow focus on UI.
 React Developer Tools | 
 
 ### 6.	React context là gì? Ứng dụng trong React?
+> TODO
 ### 7.	Server side rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
 > TODO
 ### 8.	Stateless/Stateful Component là gì? Function Component là Stateless Component hay Stateful Component? Tại sao?
