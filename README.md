@@ -30,9 +30,7 @@ More info
 ### 3.	Nêu rõ vòng Lifecycle trong React, cho cả Class Component và Function Component.
 ### 4.	Higher-order component (HOC) là gì và ứng dụng trong React?
 
-#### Khái niệm
-
-Giống với higher order function, HOC là một pattern để tái sử dụng logic trong React component. Là một component (HOC A) nhận param là một (B) hoặc nhiều component (C) rồi trả về một component mới (B v2, C v2). Trong đó B v2 và C v2 có chung một logic được nhận từ HOC A.
+Giống với higher order function, HOC là một pattern phục vụ việc tái sử dụng logic trong React component. Là một component (HOC A) nhận param là một (B) hoặc nhiều component (C) rồi trả về một component mới (B v2, C v2). Trong đó B v2 và C v2 có chung một logic được nhận từ HOC A.
 
 Cấu trúc HOC:
 * Là một component.
@@ -40,9 +38,88 @@ Cấu trúc HOC:
 * Trả về một component.
 * Component được trả về có thể render giống y chang param component.
 
-#### Ứng dụng:
+#### Ví dụ:
 
-5.	Điểm mạnh và điểm yếu của React.
+1. Hiện loader khi đang đợi data
+
+```javascript
+import React from 'react';
+function WithLoading(Component) {
+  return function WihLoadingComponent({ isLoading, ...props }) {
+    if (!isLoading) return <Component {...props} />;
+    return <p>Hold on, fetching data might take some time.</p>;
+  };
+}
+
+const ListWithLoading = WithLoading(List);
+
+render() {
+    return (
+      <ListWithLoading
+        isLoading={this.state.loading}
+        repos={this.state.repos}
+      />
+    );
+  }
+```
+
+2. Xử lý render theo tình trạng đăng nhập
+
+```javascript
+// withAuth.js
+import React from "react";
+function withAuth(Component) {
+    return class AuthenticatedComponent extends React.Component {
+        isAuthenticated() {
+            return this.props.isAuthenticated;
+        }
+        render() {
+            const loginErrorMessage = (
+                <div>
+                    Please <a href="/login">login</a> in order to view this part of the application.
+                </div>
+            );
+
+            return (
+                <div>
+                    { this.isAuthenticated === true ? <Component {...this.props} /> : loginErrorMessage }
+                </div>
+            );
+        }
+    };
+}
+export default withAuth;
+
+// MyProtectedComponent.js
+import React from "react";
+import {withAuth} from "./withAuth.js";
+export class MyProectedComponent extends React.Component {
+    render() {
+        return (
+            <div>
+                This is only viewable  by authenticated users.
+            </div>
+        );
+    }
+}
+export default withAuth(MyPrivateComponent);
+```
+
+3. Ép một style chung
+
+```javascript
+const withStyling = (BaseComponent) => (props) => (
+  <BaseComponent {...props} style={{ fontWeight: 700, color: 'green' }} />
+);
+
+const HelloComponent = ({ name, ...otherProps }) => (
+ <div {...otherProps}>Hello {name}!/div>
+);
+
+const EnhancedHello = withStyling(HelloComponent);
+```
+
+### 5.	Điểm mạnh và điểm yếu của React.
 
 Điểm mạnh | Điểm yếu
 ------------ | -------------
@@ -52,7 +129,7 @@ Downward data flow (prevents errors and facilitates debugging). | Complicated se
 Huge community. | Narrow focus on UI.
 React Developer Tools | 
 
-6.	React context là gì? Ứng dụng trong React?
+### 6.	React context là gì? Ứng dụng trong React?
 7.	Server side rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
 8.	Stateless/Stateful Component là gì? Function Component là Stateless Component hay Stateful Component? Tại sao?
 9.	Một project nên có bao nhiêu component là tối ưu nhất? Tại sao?
