@@ -28,6 +28,7 @@ More info
 * https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM
 
 ### 3.	Nêu rõ vòng Lifecycle trong React, cho cả Class Component và Function Component.
+> TODO
 ### 4.	Higher-order component (HOC) là gì và ứng dụng trong React?
 
 Giống với higher order function, HOC là một pattern phục vụ việc tái sử dụng logic trong React component. Là một component (HOC A) nhận param là một (B) hoặc nhiều component (C) rồi trả về một component mới (B v2, C v2). Trong đó B v2 và C v2 có chung một logic được nhận từ HOC A.
@@ -130,20 +131,35 @@ Huge community. | Narrow focus on UI.
 React Developer Tools | 
 
 ### 6.	React context là gì? Ứng dụng trong React?
-7.	Server side rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
-8.	Stateless/Stateful Component là gì? Function Component là Stateless Component hay Stateful Component? Tại sao?
-9.	Một project nên có bao nhiêu component là tối ưu nhất? Tại sao?
-10.	Có sự khác biệt gì giữa Class Component, Pure Component và React.memo?
-11.	Phân biệt Client Side Rendering (CRS), Server Side Rendering (SSR), Static Site Generator (SSG) và Progressive Web App (PWA).
-12.	Redux là gì? Core principles của Redux là gì?
-13.	Giới thiệu cách hoạt động của Redux.
-14.	Có thể access Redux store từ bên ngoài component được ko? Giải thích.
-15.	So sánh sự khác biệt giữa React Context và Redux.
-16.	Redux Thunk, Redux Saga là gì? So sánh. Redux Thunk hay Redux Saga phù hợp nhất cho một project?
-17.	Redux selector là gì? Tại sao sử dụng chúng?
-18.	Có cách nào lưu trữ state trong store nhưng ko sử dụng Redux ko?
-19.	Cho component tree như hình vẽ bên dưới.
-Có mấy cách để khi user take action ở component D (vd click Submit form) thì component H sẽ nhận biết được event đó.
-20.	Shallow Renderer là gì trong React testing?
-21.	TestRederer package là gì trong React?
-22.	Jest là gì? So sánh Jest và Jasmine.
+### 7.	Server side rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
+> TODO
+### 8.	Stateless/Stateful Component là gì? Function Component là Stateless Component hay Stateful Component? Tại sao?
+> TODO
+### 9.	Một project nên có bao nhiêu component là tối ưu nhất? Tại sao?
+> TODO
+### 10.	Có sự khác biệt gì giữa Class Component, Pure Component và React.memo?
+> TODO
+### 11.	Phân biệt Client Side Rendering (CRS), Server Side Rendering (SSR), Static Site Generator (SSG) và Progressive Web App (PWA).
+> TODO
+### 12.	Redux là gì? Core principles của Redux là gì?
+> TODO
+### 13.	Giới thiệu cách hoạt động của Redux.
+> TODO
+### 14.	Có thể access Redux store từ bên ngoài component được ko? Giải thích.
+> TODO
+### 15.	So sánh sự khác biệt giữa React Context và Redux.
+> TODO
+### 16.	Redux Thunk, Redux Saga là gì? So sánh. Redux Thunk hay Redux Saga phù hợp nhất cho một project?
+> TODO
+### 17.	Redux selector là gì? Tại sao sử dụng chúng?
+> TODO
+### 18.	Có cách nào lưu trữ state trong store nhưng ko sử dụng Redux ko?
+> TODO
+### 19.	Cho component tree như hình vẽ bên dưới. Có mấy cách để khi user take action ở component D (vd click Submit form) thì component H sẽ nhận biết được event đó.
+> TODO
+### 20.	Shallow Renderer là gì trong React testing?
+> TODO
+### 21.	TestRederer package là gì trong React?
+> TODO
+### 22.	Jest là gì? So sánh Jest và Jasmine.
+> TODO
