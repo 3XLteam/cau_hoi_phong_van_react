@@ -28,7 +28,12 @@ More info
 * https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM
 
 ### 3.	Nêu rõ vòng Lifecycle trong React, cho cả Class Component và Function Component.
-> TODO
+Khi một components được khởi chạy nó sẽ phải trải qua 4 giai đoạn chính cho class component:
+* initialization: Đây là giai đoạn mà thành phần sẽ bắt đầu hành trình của mình bằng cách khởi tạo state và props. Điều này thường được thực hiện bên trong phương thức constructor. Chỉ có một phương thức duy nhất: constructor.
+* mounting: Giai đoạn này được thực hiện sau khi quá trình initialization(khởi tạo) được hoàn thành. Nó thực hiện nhiệm vụ chuyển virtual DOM (DOM ảo) trong React thành DOM và hiển thị trên trình duyệt. Component sẽ được render lần đầu tiên, ở đây chúng ta có 3 phương thức để tham gia vào giai đoạn này. Bao gồm các phương thức: componentWillMount, componentDidMount (thường call API ở lần render đầu tiên trong phương thức này).
+* updating: Đây là giai đoạn thứ ba mà các component phải thực hiện, sau giai đoạn initialization (khởi tạo ) , mount (render lần đầu),... . Trong giai đoạn này, dữ liệu của các phần (props & state) sẽ được cập nhật để đáp ứng với các sự kiện của người dùng như click, gõ, v.v. Điều này dẫn đến việc re-render lại component, ở trong giai đoạn này chúng ta sẽ có 4 phương thức chính: shouldComponentUpdate (chỉ có khi dùng Component, không có khi dùng PureComponent), componentWillUpdate, componentDidUpdate
+* unmounting: Đây là bước cuối cùng trong mỗi component, khi tất cả các tác vụ hoàn thành và bạn tiến hành unmount DOM. Chỉ có một phương thức duy nhất: componentWillUnmount.
+Functional component không có lifecycle, nó chỉ sử dụng các hook tương ứng trong một số điều kiện nhất định có thể xem như tương đương với một phương thức.
 ### 4.	Higher-order component (HOC) là gì và ứng dụng trong React?
 
 Giống với higher order function, HOC là một pattern phục vụ việc tái sử dụng logic trong React component. Là một component (HOC A) nhận param là một (B) hoặc nhiều component (C) rồi trả về một component mới (B v2, C v2). Trong đó B v2 và C v2 có chung một logic được nhận từ HOC A.
