@@ -144,7 +144,9 @@ Nên sử dụng Context khi ta cần một data global, nhiều component trên
 ### 7.	Server side rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
 > TODO
 ### 8.	Stateless/Stateful Component là gì? Function Component là Stateless Component hay Stateful Component? Tại sao?
-> TODO
+* Stateless component (hay còn gọi là dump component) là các component không chứa state, chỉ sử dụng props (nếu có) để render ra UI.
+* Stateful component (hay còn gọi là smart component) là các component có chứa state, logic và truyền props cho stateless component render ra UI.
+* Trước khi có React hooks thì functional component được xem là stateless component (do không thể lưu lại state). Sau khi có React hooks thì functional component có thể được xem là stateful component vì có thể dùng state trong component với hook useState.
 ### 9.	Một project nên có bao nhiêu component là tối ưu nhất? Tại sao?
 > TODO
 ### 10.	Có sự khác biệt gì giữa Class Component, Pure Component và React.memo?
