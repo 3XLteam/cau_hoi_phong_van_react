@@ -125,6 +125,8 @@ const HelloComponent = ({ name, ...otherProps }) => (
 const EnhancedHello = withStyling(HelloComponent);
 ```
 
+More info https://www.smashingmagazine.com/2020/06/higher-order-components-react/
+
 ### 5.	Điểm mạnh và điểm yếu của React.
 
 Điểm mạnh | Điểm yếu
