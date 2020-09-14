@@ -143,8 +143,18 @@ React context là một API của react, cho phép truyền props đi qua nhiề
 Nên sử dụng Context khi ta cần một data global, nhiều component trên những nhánh khác nhau cần sử dụng nó.
 Ứng dụng: Thông tin đăng nhập, share style, theme...
 
-### 7.	Server side rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
-> TODO
+### 7.	Server site rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
+
+#### Khái niệm:
+
+SSR là khả năng render page trên server, khi server nhận request vào một page, nó sẽ chạy page này trên môi trường server (render, gọi API), khi page được render xong nó sẽ trả về cho browser, cộng việc của browser lúc này chỉ là hiện content của page được trả về lên cho user.  
+
+Sử dụng nodejs, React.renderToString, React.hydrate để thực hiện SSR.
+
+More info 
+* https://www.digitalocean.com/community/tutorials/react-server-side-rendering
+* https://ms314006.github.io/simple-implementing-ssr-in-react/
+
 ### 8.	Stateless/Stateful Component là gì? Function Component là Stateless Component hay Stateful Component? Tại sao?
 * Stateless component (hay còn gọi là dump component) là các component không chứa state, chỉ sử dụng props (nếu có) để render ra UI.
 * Stateful component (hay còn gọi là smart component) là các component có chứa state, logic và truyền props cho stateless component render ra UI.
