@@ -145,8 +145,6 @@ Nên sử dụng Context khi ta cần một data global, nhiều component trên
 
 ### 7.	Server site rendering (SSR) hoạt động như thế nào? Làm sao để thực hiện SSR trong React?
 
-#### Khái niệm:
-
 SSR là khả năng render page trên server, khi server nhận request vào một page, nó sẽ chạy page này trên môi trường server (render, gọi API), khi page được render xong nó sẽ trả về cho browser, cộng việc của browser lúc này chỉ là hiện content của page được trả về lên cho user.  
 
 Sử dụng nodejs, React.renderToString, React.hydrate để thực hiện SSR.
